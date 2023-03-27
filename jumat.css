@@ -1,0 +1,40 @@
+h1 {
+    color: blue;
+    font-family: 'Helvetica';
+}
+
+.container {
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    background-color: blueviolet;
+    min-height: 200px;
+    width: 30%;
+    /* display: inline-block; */
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .col {
+        width: 40%;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        color: red;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
